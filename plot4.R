@@ -25,8 +25,9 @@ plot4 <- function() {
     par(mfrow=c(2,2))
     
     # Draw the first graph
-    hist (feb2007ElectricPowerConsumption$Global_active_power, 
-          main="Global Active Power", xlab="Global Active Power(kilowatts)", ylab="frequency", col = "red")
+    plot (feb2007ElectricPowerConsumption$DateTime, 
+          feb2007ElectricPowerConsumption$Global_active_power,
+          type="l", ylab="Global Active Power", xlab="")
     
     #Draw the second graph
     
